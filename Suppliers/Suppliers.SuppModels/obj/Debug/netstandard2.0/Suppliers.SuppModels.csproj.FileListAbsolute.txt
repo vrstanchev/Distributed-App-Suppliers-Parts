@@ -1,0 +1,4 @@
+/home/vesodeveloper/Development/C#/Distr_App_Proj/Suppliers/Suppliers.SuppModels/obj/Debug/netstandard2.0/Suppliers.SuppModels.csprojAssemblyReference.cache
+/home/vesodeveloper/Development/C#/Distr_App_Proj/Suppliers/Suppliers.SuppModels/obj/Debug/netstandard2.0/Suppliers.SuppModels.csproj.CoreCompileInputs.cache
+/home/vesodeveloper/Development/C#/Distr_App_Proj/Suppliers/Suppliers.SuppModels/obj/Debug/netstandard2.0/Suppliers.SuppModels.AssemblyInfoInputs.cache
+/home/vesodeveloper/Development/C#/Distr_App_Proj/Suppliers/Suppliers.SuppModels/obj/Debug/netstandard2.0/Suppliers.SuppModels.AssemblyInfo.cs

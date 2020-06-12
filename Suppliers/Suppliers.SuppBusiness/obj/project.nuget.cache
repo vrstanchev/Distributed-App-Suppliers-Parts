@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MmxGlGx2OeifiOoWrVdrrd84PxGTXFArCMhMniW/haAQJyxjJ4Lobk9/8o049XX81c7Y7NEM1hwOe5KcYm8drQ==",
+  "success": true,
+  "projectFilePath": "/home/vesodeveloper/Development/C#/Distr_App_Proj/Suppliers/Suppliers.SuppBusiness/Suppliers.SuppBusiness.csproj",
+  "expectedPackageFiles": [
+    "/home/vesodeveloper/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/vesodeveloper/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
