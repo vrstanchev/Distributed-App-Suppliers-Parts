@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<form method="POST">
+    <input type="text" asp-for ="SearchString"/>
+    <input type="submit" value="Search"/>
+</form>
+<form method="POST">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model.Suppliers)
+            {
+                <tr>
+                <td>@s.Id</td>
+                <td>@s.Name</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@s.Id">Edit</a>
+                    <button type="submit" asp-page-handler="delete" asp-route-id="@s.Id">Delete</button>
+                </td>
+            </tr>
+            }
+            
+        </tbody>
+    </table>
+</form>

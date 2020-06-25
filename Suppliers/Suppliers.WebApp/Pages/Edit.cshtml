@@ -1,0 +1,13 @@
+﻿@page
+@model Suppliers.WebApp.Pages.EditModel
+@{
+    ViewData["Title"]="Edit";
+}
+<h2>Edit @Model.Supplier.Id</h2>
+<form method="POST">
+    <input asp-for="Supplier.Id" type="hidden" />
+    <label asp-for="Supplier.Name">Edit Name</label></br>
+    <input asp-for="Supplier.Name"/>
+    <div asp-validation-for="Supplier.Name"></div>
+    <button type="submit" value="Edit"></button>
+</form>

@@ -1,0 +1,13 @@
+﻿@page
+@model Suppliers.WebApp.Pages.CreateModel
+@{
+    ViewData["Title"]= "Create";
+}
+<h2>Create</h2>
+
+<form method="POST">
+    <label for="fname">Enter your name:</label></br>
+   <input asp-for="Supplier.Name" id="fname"/> </br>
+   <div asp-validation-for="Supplier.Name"></div></br>
+    <input type="submit" value="Save"/>
+</form>

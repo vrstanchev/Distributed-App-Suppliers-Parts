@@ -8,7 +8,7 @@ public SuppDbContext():base()
 }
 public virtual DbSet<PartsEntity> Parts {get;set;}
 public virtual DbSet<SuppliersEntity> Suppliers {get;set;}
-public virtual DbSet<SuppliersPartsEntity> SuppliersParts {get;set;}
+public virtual DbSet<SuppliersPartsEntity> SP {get;set;}
 protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
 optionsBuilder
 .UseLazyLoadingProxies()

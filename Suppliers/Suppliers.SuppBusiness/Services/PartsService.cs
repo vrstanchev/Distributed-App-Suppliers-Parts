@@ -4,7 +4,7 @@ using System.Linq;
 using Suppliers.SuppBusiness.DTOs;
 using Suppliers.SuppData;
 using Suppliers.SuppModels.Entities;
-namespace  Suppliers.SuppBusiness{
+namespace  Suppliers.SuppBusiness.Services{
 public class PartsService{
 public IEnumerable<PartsDTO>GetAllByName(string part_name){
 using (UnitOfWork unitOfWork=new UnitOfWork())

@@ -1,5 +1,5 @@
 using System;
-namespace Suppliers.SuppModels
+namespace Suppliers.SuppModels.Entities
 {
     public class BaseEntity{
         public int Id { get; set; }

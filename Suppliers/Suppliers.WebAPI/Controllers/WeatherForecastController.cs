@@ -4,36 +4,36 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
+using Suppliers.WebAPI.Models;
 namespace Suppliers.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private readonly SupplierContext _db;
+        
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+   static List<string> strings = new List<string>{
+       "Mitko","Petko","Pavel"
+   };
+   [HttpGet]
+        public IEnumerable<string> Get()
         {
-            _logger = logger;
+          return strings;
         }
-
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+        public string Get(int id){
+            return strings[id];
         }
+        public void Post([FromBody]string value){
+            strings.Add(value);
+        }
+        public void Put(int id,[FromBody]string value){
+            strings[id]=value;
+        }
+        public void Delete(int id){
+            strings.RemoveAt(id);
+        }
+      //
     }
 }
